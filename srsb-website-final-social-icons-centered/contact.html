@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRSB Workforce Solutions | Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="site-modal" id="fraudAlert" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="fraud-modal" role="dialog" aria-modal="true" aria-labelledby="fraudTitle">
+      <button class="modal-close" type="button" aria-label="Close notice" data-close-modal>×</button>
+      <p class="modal-kicker">Important Notice</p>
+      <h2 id="fraudTitle">Attention Candidates:<br />Beware of Job Scams</h2>
+      <p>
+        SRSB Workforce Solutions Pvt. Ltd. does not charge any registration fee, interview fee,
+        joining fee, placement fee or security deposit at any stage of the recruitment process.
+      </p>
+      <p class="modal-small">Do not share money, OTP, bank details or personal documents with unknown people without proper verification.</p>
+      <a href="contact.html#candidate-safety" class="modal-link">Click here to know more</a>
+    </div>
+  </div>
+
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo"><img src="images/srsb-logo.png" alt="SRSB Workforce Solutions Logo" /></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <nav class="navbar" id="navbar">
+        <div class="nav-item">
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <a href="index.html#company-detail">About Company</a>
+            <a href="index.html#client-impact">Clients Served</a>
+            <a href="index.html#sectors-served">Sectors Served</a>
+            <a href="index.html#faq">FAQ</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="about.html">About Us</a>
+          <div class="dropdown">
+            <a href="about.html#overview">Company Overview</a>
+            <a href="about.html#approach">Delivery Approach</a>
+            <a href="about.html#vision">Vision</a>
+            <a href="about.html#mission">Mission</a>
+            <a href="about.html#values">Core Values</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="services.html">Services</a>
+          <div class="dropdown">
+            <a href="services.html#recruitment">Recruitment</a>
+            <a href="services.html#staffing">Staffing</a>
+            <a href="services.html#payroll">Payroll</a>
+            <a href="services.html#workforce">Workforce Management</a>
+            <a href="services.html#process">Service Process</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html">Contact</a>
+          <div class="dropdown">
+            <a href="contact.html#candidate-form">Get Hired Form</a>
+            <a href="contact.html#client-form">Find Talent Form</a>
+            <a href="contact.html#candidate-safety">Candidate Safety</a>
+            <a href="contact.html#contact-details">Contact Details</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-grid reveal">
+        <div>
+          <p class="eyebrow">Contact Us</p>
+          <h1>Let’s Build Great Teams Together</h1>
+          <p>Candidates can apply for jobs and companies can share hiring requirements using the forms below.</p>
+        </div>
+        <div class="image-card photo-card page-hero-image">
+          <img src="images/office-workspace.jpg" alt="Office workspace and hiring support" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark form-section" id="client-form">
+      <div class="container form-grid">
+        <div class="reveal form-copy">
+          <p class="eyebrow">For Companies / Recruiters</p>
+          <h2>Find Talent</h2>
+          <p>Share your hiring requirement and our team will help you build the right workforce with recruitment, staffing, payroll or workforce management support.</p>
+          <img src="images/team-laptop.jpg" alt="Hiring process discussion" class="form-side-image" />
+        </div>
+        <form class="contact-form reveal" action="process-form.php" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="form_type" value="client" />
+          <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" />
+          <div class="field"><label>Company Name</label><input type="text" name="company_name" placeholder="Enter company name" required /></div>
+          <div class="field"><label>Contact Person Name</label><input type="text" name="contact_person" placeholder="Enter contact person name" required /></div>
+          <div class="field"><label>Official Email Address</label><input type="email" name="official_email" placeholder="Enter official email address" required /></div>
+          <div class="field"><label>Phone Number</label><input type="tel" name="client_phone" placeholder="Enter phone number" required /></div>
+          <div class="field"><label>Hiring Location</label><input type="text" name="hiring_location" placeholder="Example: Bengaluru" /></div>
+          <div class="field"><label>Job Role / Position</label><input type="text" name="job_role" placeholder="Example: Recruiter, Developer, Support" /></div>
+          <div class="field"><label>Number of Openings</label><input type="text" name="openings" placeholder="Example: 5" /></div>
+          <div class="field"><label>Service Required</label><select name="service_required"><option value="">Select Service Required</option><option value="Recruitment">Recruitment</option><option value="Staffing">Staffing</option><option value="Payroll Management">Payroll Management</option><option value="Workforce Management">Workforce Management</option></select></div>
+          <div class="field"><label>Industry Type</label><select name="industry_type"><option value="">Select Industry Type</option><option value="Manufacturing & Heavy Industry">Manufacturing & Heavy Industry</option><option value="Information Technology & Software">Information Technology & Software</option><option value=" Healthcare & Life Sciences"> Healthcare & Life Sciences</option><option value="Finance, Banking & Insurance">Finance, Banking & Insurance</option><option value="Retail & E-commerce">Retail & E-commerce</option><option value="Others">Others</option></select></div>
+          <div class="field"><label>Hiring Requirement</label><textarea name="requirement" placeholder="Describe your hiring requirement"></textarea></div>
+          <div class="field"><label>Upload JD / Requirement File</label><input type="file" name="jd_file" accept=".pdf,.doc,.docx" /><small class="upload-hint">Allowed formats: PDF, DOC, DOCX | Maximum size: 5MB</small></div>
+          <button type="submit" class="btn btn-primary">Submit Requirement</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section form-section" id="candidate-form">
+      <div class="container form-grid">
+        <div class="reveal form-copy">
+          <p class="eyebrow">For Candidates</p>
+          <h2>Get Hired</h2>
+          <p>Submit your details and our team will connect with you for suitable job opportunities. SRSB does not charge candidates for registration, interviews, joining or placement.</p>
+          <img src="images/consulting-laptop.jpg" alt="Candidate application consultation" class="form-side-image" />
+        </div>
+        <form class="contact-form reveal" action="process-form.php" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="form_type" value="candidate" />
+          <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" />
+          <div class="field"><label>Full Name</label><input type="text" name="candidate_name" placeholder="Enter your full name" required /></div>
+          <div class="field"><label>Email Address</label><input type="email" name="candidate_email" placeholder="Enter your email address" required /></div>
+          <div class="field"><label>Phone Number</label><input type="tel" name="candidate_phone" placeholder="Enter your phone number" required /></div>
+          <div class="field"><label>Current Location</label><input type="text" name="current_location" placeholder="Example: Bengaluru" /></div>
+          <div class="field"><label>Preferred Job Role</label><input type="text" name="preferred_role" placeholder="Example: HR Executive, IT Support" /></div>
+          <div class="field"><label>Experience</label><input type="text" name="experience" placeholder="Example: Fresher / 2 years" /></div>
+          <div class="field"><label>Skills</label><textarea name="skills" placeholder="Tell us about your skills"></textarea></div>
+          <div class="field"><label>Upload Resume</label><input type="file" name="resume" accept=".pdf,.doc,.docx" required /><small class="upload-hint">Allowed formats: PDF, DOC, DOCX | Maximum size: 5MB</small></div>
+          <button type="submit" class="btn btn-primary">Submit Application</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section warning-section" id="candidate-safety">
+      <div class="container split visual-split">
+        <div class="section-title left reveal">
+          <p class="eyebrow">Candidate Safety</p>
+          <h2>Important notice for candidates</h2>
+          <p>SRSB Workforce Solutions Pvt. Ltd. does not charge any registration fee, interview fee, joining fee, placement fee or security deposit at any stage of recruitment.</p>
+          <p>Do not share money, OTP, bank details or personal documents with unknown people. For job-related confirmation, contact SRSB only through the official email, official website or company contact number.</p>
+        </div>
+        <div class="safety-card reveal">
+          <h3>Before you respond to any job message:</h3>
+          <ul class="check-list dark-checks">
+            <li>Verify the sender identity and company details.</li>
+            <li>Do not pay money for interviews or offer letters.</li>
+            <li>Do not share OTP, UPI PIN or banking passwords.</li>
+            <li>Confirm job communication through official SRSB contact channels.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact-details">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="eyebrow">Contact Details</p>
+          <h2>Connect With SRSB</h2>
+        </div>
+        <div class="card-grid three-cols">
+          <article class="info-card reveal"><h3>Email</h3><p>info@srsbworkforcesolutions.com</p></article>
+          <article class="info-card reveal"><h3>Phone</h3><p>+91 9513791114</p></article>
+          <article class="info-card reveal"><h3>Office Address</h3><p>#228/B, 55th Cross, 3rd Block, behind Ram Mandir Temple, Rajajinagar, Bangalore 560010</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+    <footer class="footer">
+    <div class="container footer-grid footer-grid-new">
+      <div>
+        <h3>SRSB Workforce Solutions</h3>
+        <p>SRSB Workforce Solutions Pvt. Ltd. is a trusted manpower and workforce service provider helping businesses with hiring, staffing, payroll and compliance-driven workforce support.</p>
+        <div class="social-links" aria-label="SRSB social media links">
+          <a class="social-link" href="https://www.facebook.com/srsbworkforce" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v4h4v-4h3.2l.8-4H13V9c0-.6.4-1 1-1z" fill="currentColor"/></svg>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/srsbworkforce/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2.5A2.5 2.5 0 0 0 4.5 7v10A2.5 2.5 0 0 0 7 19.5h10a2.5 2.5 0 0 0 2.5-2.5V7A2.5 2.5 0 0 0 17 4.5H7zm10.75 1.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.2A2.8 2.8 0 1 0 12 14.8 2.8 2.8 0 0 0 12 9.2z" fill="currentColor"/></svg>
+          </a>
+          <a class="social-link" href="https://www.linkedin.com/company/109188021/admin/dashboard/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.49 2.49 0 1 0 5 8.48 2.49 2.49 0 0 0 4.98 3.5zM3 9h4v12H3zM9 9h3.83v1.64h.06c.53-1 1.85-2.06 3.8-2.06 4.06 0 4.81 2.67 4.81 6.14V21h-4v-5.34c0-1.27-.02-2.91-1.77-2.91-1.77 0-2.04 1.38-2.04 2.82V21H9z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <a href="services.html#recruitment">Recruitment</a>
+        <a href="services.html#staffing">Onroll Staffing</a>
+        <a href="services.html#payroll">Payroll Management</a>
+        <a href="services.html#workforce">Workforce Management</a>
+        <a href="services.html#process">Service Process</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Email: info@srsbworkforcesolutions.com</p>
+        <p>Phone: +91 9513791114</p>
+        <p>#228/B, 55th Cross, 3rd Block, behind Ram Mandir Temple, Rajajinagar, Bangalore 560010</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 SRSB Workforce Solutions. All rights reserved.</div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
